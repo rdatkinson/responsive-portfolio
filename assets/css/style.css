@@ -22,6 +22,8 @@ p {
   margin: 0;
 }
 
+/* Navbar Styling */
+
 .headerContainer {
   background-color: red;
   display: flex;
@@ -40,3 +42,6 @@ ul {
   gap: 30px;
   margin-right: 10px;
 }
+
+/* Hero Styling */
+
