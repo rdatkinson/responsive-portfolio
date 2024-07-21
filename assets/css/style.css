@@ -61,7 +61,7 @@ ul {
 /* Main Page Styling */
 .pageWrapper {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 200px 75%;
   grid-template-rows:
     minmax(200px, auto) minmax(600px, auto) minmax(100px, auto)
     minmax(100px, auto);
@@ -83,7 +83,7 @@ ul {
 #aboutH2 {
   grid-area: aboutH2;
   justify-self: end;
-  padding-right: 20px;
+  margin-right: 20px;
 }
 
 #aboutP {
@@ -129,29 +129,8 @@ ul {
 }
 
 /* About Styling */
-/* #about {
-  display: flex;
-  margin-top: 40px;
-} */
-
-/* #about p {
-  margin-left: 40px;
-  margin-right: 10px;
-} */
 
 /* Work Styling */
-/* #work {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  height: 50vh;
-} */
-
-/* #work h2 {
-  border-right: 3px solid red;
-  padding-right: 40px;
-} */
-
 .workGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -195,4 +174,10 @@ ul {
   background-image: url("../images/my-images/xinyi-w-qjCHPZbeXCQ-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.workText {
+  display: flex;
+  justify-content: end;
+  align-items: end;
 }
