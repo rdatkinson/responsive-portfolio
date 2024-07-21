@@ -23,13 +23,12 @@ p {
 }
 
 /* Navbar Styling */
-
 .headerContainer {
   background-color: red;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 80px;
 }
 
 .headerContainer h1 {
@@ -44,4 +43,17 @@ ul {
 }
 
 /* Hero Styling */
+.heroBanner {
+  height: 200px;
+  background-image: url("../images/my-images/pawel-czerwinski-QY5U8JD3-tk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
 
+.heroBanner h2 {
+  margin-right: 10px;
+}
