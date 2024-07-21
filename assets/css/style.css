@@ -57,3 +57,19 @@ ul {
 .heroBanner h2 {
   margin-right: 10px;
 }
+
+/* Main Page Styling */
+#about {
+  display: flex;
+  margin-top: 40px;
+}
+
+#about h2 {
+  border-right: 3px solid red;
+  padding-right: 40px;
+}
+
+#about p {
+  margin-left: 40px;
+  margin-right: 10px;
+}
