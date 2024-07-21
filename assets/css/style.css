@@ -5,7 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -51,7 +52,6 @@ ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
 }
 
 .heroBanner h2 {
@@ -59,17 +59,140 @@ ul {
 }
 
 /* Main Page Styling */
-#about {
+.pageWrapper {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows:
+    minmax(200px, auto) minmax(600px, auto) minmax(100px, auto)
+    minmax(100px, auto);
+  grid-template-areas:
+    "aboutH2 aboutP"
+    "workH2 workP"
+    "contactH2 contactP"
+    "resumeH2 resumeP";
+  margin: 0 5%;
+  row-gap: 20px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.page-section {
+  display: contents;
+}
+
+#aboutH2 {
+  grid-area: aboutH2;
+  justify-self: end;
+  padding-right: 20px;
+}
+
+#aboutP {
+  grid-area: aboutP;
+  border-left: 3px solid red;
+  padding-left: 60px;
+}
+
+#workH2 {
+  grid-area: workH2;
+  justify-self: end;
+  padding-right: 20px;
+}
+
+#workP {
+  grid-area: workP;
+  border-left: 3px solid red;
+  padding-left: 60px;
+}
+
+#contactH2 {
+  grid-area: contactH2;
+  justify-self: end;
+  padding-right: 20px;
+}
+
+#contactP {
+  grid-area: contactP;
+  border-left: 3px solid red;
+  padding-left: 60px;
+}
+
+#resumeH2 {
+  grid-area: resumeH2;
+  justify-self: end;
+  padding-right: 20px;
+}
+
+#resumeP {
+  grid-area: resumeP;
+  border-left: 3px solid red;
+  padding-left: 60px;
+}
+
+/* About Styling */
+/* #about {
   display: flex;
   margin-top: 40px;
-}
+} */
 
-#about h2 {
-  border-right: 3px solid red;
-  padding-right: 40px;
-}
-
-#about p {
+/* #about p {
   margin-left: 40px;
   margin-right: 10px;
+} */
+
+/* Work Styling */
+/* #work {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  height: 50vh;
+} */
+
+/* #work h2 {
+  border-right: 3px solid red;
+  padding-right: 40px;
+} */
+
+.workGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "horiseon horiseon"
+    "css landing"
+    "jake soon";
+}
+
+#horiseon {
+  grid-area: horiseon;
+  background-image: url("../images/my-images/xinyi-w-qjCHPZbeXCQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#css {
+  grid-area: css;
+  background-image: url("../images/my-images/xinyi-w-qjCHPZbeXCQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#landing {
+  grid-area: landing;
+  background-image: url("../images/my-images/xinyi-w-qjCHPZbeXCQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#jake {
+  grid-area: jake;
+  background-image: url("../images/my-images/xinyi-w-qjCHPZbeXCQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#soon {
+  grid-area: soon;
+  background-image: url("../images/my-images/xinyi-w-qjCHPZbeXCQ-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
