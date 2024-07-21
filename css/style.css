@@ -21,3 +21,22 @@ h6 {
 p {
   margin: 0;
 }
+
+.headerContainer {
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.headerContainer h1 {
+  margin-left: 10px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 10px;
+}
