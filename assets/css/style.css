@@ -114,6 +114,9 @@ ul {
   grid-area: contactP;
   border-left: 3px solid red;
   padding-left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #resumeH2 {
@@ -134,7 +137,9 @@ ul {
 .workGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1.5fr 1.5fr;
+  column-gap: 10px;
+  row-gap: 10px;
   grid-template-areas:
     "horiseon horiseon"
     "css landing"
@@ -181,3 +186,5 @@ ul {
   justify-content: end;
   align-items: end;
 }
+
+/* Contact Styling */
